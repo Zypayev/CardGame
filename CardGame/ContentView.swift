@@ -13,7 +13,6 @@ struct ContentView: View {
             CardView(isFaceUp: true)
             CardView()
             CardView()
-            CardView()
         }
         .foregroundColor(.orange)
         .padding()
