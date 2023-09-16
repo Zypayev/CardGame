@@ -32,7 +32,12 @@ struct CardView: View {
                 Text("👻").font(.largeTitle)
             }
         } else {
-            RoundedRectangle(cornerRadius: 12)
+            ZStack {
+                RoundedRectangle(cornerRadius: 12)
+                    .foregroundColor(.white)
+                RoundedRectangle(cornerRadius: 12)
+                    .strokeBorder(lineWidth: 2)
+            }
         }
     }
 }
